@@ -26,7 +26,7 @@
                 <img src="./assets/images/logo.png"  width="364" height="58" alt="logo">
             </a>
 
-            <div class="search-view active" data-search-view>
+            <div class="search-view" data-search-view>
                 <div class="search-wrapper">
                     <input type="search" name="search" placeholder="Search city..." autocomplete="off" class="search-field" data-search-filed>
                     
@@ -37,7 +37,6 @@
                     <span class="m-icon">arrow_back</span>
                 </button>
                 </div>
-
                 <div class="search-result" data-search-result>
                     <ul class="view-list" data-search-list>
                         <li class="view-item">
@@ -52,9 +51,9 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
             
-
             <div class="header-actions">
                 <button class="icon-btn has-state" aria-lable="open search" data-search-toggler>
                     <span class="m-icon icon">Search</span>
@@ -70,5 +69,53 @@
 
         </div>
     </header>
+
+
+
+
+
+
+    <main>
+        <article class="container">
+            <div class="content-left">
+                <!--========= CURRENT WEATHER ========-->
+                <section class="section current-weather" aria-lable="current weather" data-current-weather>
+                    <div class="card card-lg current-weather-card">
+                        <h2 class="title-2 card-title">Now</h2>
+
+                        <div class="weapper">
+                            <p class="heading">25&deg;<sup>c</sup></p>
+
+                            <img src="./assets/images/weather_icons/01d.png" width="64" height="64" alt="Overcast Clouds" class="weather-icon">
+                        </div>
+
+                        <p class="body-3">Overcast Clouds</p>
+
+                        <ul class="meta-list">
+
+                            <li class="meta-item">
+                                <span class="m-icon">calendar_today</span>
+
+                                <p class="title-3 meta-text">Thursday 16, Feb</p>
+                            </li>
+
+                            <li class="meta-item">
+                                <span class="m-icon">location_on</span>
+
+                                <p class="title-3 meta-text">London, GB</p>
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+                </section>
+            </div>
+
+        </article>
+
+
+    </main>
 </body>
 </html>

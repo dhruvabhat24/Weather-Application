@@ -295,7 +295,7 @@ body{
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-.search-view,
+
 .header .btn-primary .span{ display: none;}
 
 .logo img {
@@ -305,7 +305,6 @@ body{
 .header .container,
 .header-actions {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -358,7 +357,7 @@ body{
   border-block-start-color: transparent;
   border-radius: var(--radius-circle);
   animation: loading 500ms linear infinite;
-  display: none;
+ display: none;
 }
 
 @keyframes loading{
@@ -375,7 +374,7 @@ body{
   outline: none;
 }
 
-.search-field::placeholder {color: var(--on-surface-variant);}
+.search-field::placeholder {color: var(--on-surface-variant-2);}
 
 .search-field::-webkit-search-cancel-button { display: none;}
 
@@ -407,6 +406,15 @@ body{
   padding-inline: 16px 24px;
 }
 
+.search-view .view-item:is(.m-icon, .item-subtitle) {
+  color: var(--on-surface-variant);
+}
+
+.search-view .view-item .item-link{
+  position: absolute;
+  inset: 0;
+  box-shadow: none;
+}
 
 /*-----------------------------------*\
   #CURRENT WEATHER

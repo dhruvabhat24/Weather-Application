@@ -6,6 +6,8 @@
     "axe/aria": "off",
     "button-type": "off",
     "axe/name-role-value": "off",
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
   }
 }
