@@ -520,9 +520,29 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
 \*-----------------------------------*/
 
 .current-weather-card .weapper {
-  
+  margin-block: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
+.current-weather-card .weather-icon {
+  margin-inline: auto;
+}
+
+.current-weather-card > .body-3 { text-transform: capitalize;}
+
+.current-weather-card .meta-list {
+  margin-block-start: 16px;
+  padding-block-start: 16px;
+  border-block-start: 1px solid var(--outline);
+}
+
+.current-weather-card .meta-item {
+  margin-block-end: 12px;
+}
+
+.current-weather-card .meta-text { color: var(--on-surface-variant);}
 
 
 
