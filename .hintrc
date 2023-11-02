@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/aria": "off",
+    "button-type": "off",
+    "axe/name-role-value": "off",
+    "css-prefix-order": "off"
+  }
+}
