@@ -26,11 +26,11 @@
                 <img src="./assets/images/logo.png"  width="364" height="58" alt="logo">
             </a>
 
-            <div class="search-view" data-search-view>
+            <div class="search-view active" data-search-view>
                 <div class="search-wrapper">
                     <input type="search" name="search" placeholder="Search city..." autocomplete="off" class="search-field" data-search-filed>
                     
-                    <span class="m-icon">search</span>
+                    <span class="m-icon leading-icon">search</span>
                     
 
                 <button class="icon-btn leading-icon has-state" aria-lable="close search" data-search-toggler>
@@ -69,11 +69,6 @@
 
         </div>
     </header>
-
-
-
-
-
 
     <main>
         <article class="container">
@@ -313,7 +308,7 @@
 
                 <!--========== HOURLY FORECAST =========-->
 
-                <div class="section hourly-forecast" aria-lable="hourly forecast" data-hourly-forecast>
+                <section class="section hourly-forecast" aria-lable="hourly forecast" data-hourly-forecast>
                     <h2 class="title-2">Today at</h2>
                     <div class="slider-container">
                         <ul class="slider-list">
@@ -374,7 +369,7 @@
                                     <p class="body3">12 km/h</p>
                                 </div>
                             </li>
-                            
+
                             <li class="slider-item" data-temp>
                                 <div class="card card-sm slider-card">
                                     <p class="body-3">03 PM</p>
@@ -412,7 +407,27 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
+                
+
+
+            <!--=========== FOOTER ==========-->
+
+            <footer class="footer">
+                <p class="body-3">
+                    Copyright 2023 Dhruva. All Rights Reserved.
+                </p>
+
+                <p class="body-3">
+                    Powered by <a href="https://openweathermap.org/api" title="Free OpenWeather Api" target="_blank" rel="noopener">
+                        <img src="./assets/images/openweather.png" width="150" height="30" loading="lazy" alt="OpenWeather">
+                    </a>
+                </p>
+            </footer>
+
+            </div>
+
+            <div class="loading" data-loading>
 
             </div>
 
@@ -420,5 +435,18 @@
 
 
     </main>
+
+        <!--========= 404 SECTION =========-->
+        <section class="error-content" data-error-content>
+            <h2 class="heading">
+                404
+            </h2>
+
+            <p class="body-1">Page not found!</p>
+
+            <a href="#" class="btn-primary">
+                <span class="span">Go Home</span>
+            </a>
+        </section>
 </body>
 </html>
