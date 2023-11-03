@@ -832,7 +832,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
 
   main {
     height: calc(100vh -96px);
-    height: calc(100svh -96px);
+    height: calc(100svh -96px);/* for mobile browser*/
   }
 
   article.container {
@@ -853,7 +853,7 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
     margin-block-end: 16px;
   }
 
-  .hightlight-list { grid-template-columns: 1fr 1fr; }
+  .highlight-list { grid-template-columns: 1fr 1fr; }
 
   .highlight-card:nth-child(-n+2) {
     grid-column: span 2;
@@ -972,6 +972,58 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb{
     top: 100%;
     left: 0;
     width: 100%;
-    max-height: 368px;
+    max-height: 360px;
+    border-radius: 0 0 var(--radius-28) var(--radius-28);
+    border-block-start: 1px solid var(--outline);
+    overflow-y: auto; /* for firefox */
+    overflow-y: overlay;
   }
+
+  .search-view .view-list:empty { min-height: 20px; }
+
+  .search-view .view-list::-webkit-scrollbar-button { height: 20px; }
+
+  .search-view:is(:hover, :has(.view-list):hover) {
+    filter: drop-shadow(var(--shadow-1s));
+  }
+
+  .search-view:is(:focus-within, :has(.view-list):focus-within) {
+    filter: drop-shadow(var(--shadow-2));
+  }
+
+  /**
+  * MAIN
+  */
+
+  main {
+    height: calc(100vh - 120px);
+    height: calc(100svh - 120px); /* for mobile browser*/
+  }
+
+  article.container {
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .current-weather .weather-icon { width: 80px; }
+
+  .forecast-card .title-2 { --title-2: 2.2rem ; }
+
+  .highlight-card:nth-child(-n+2) { height: 200px; }
+
+  .highlight-card:nth-child(n+3) {
+    height: 150px;
+  }
+
+  .highlight-card .m-icon { font-size: 4.8rem; }
+
+  .slider-list { gap: 16px; }
+}
+
+
+/* responsive for large  than 1400px screen */
+
+@media (min-width: 1400px) {
+
+  .hightlight-list { grid-template-columns: repeat(4, 1fr) ;}
 }
