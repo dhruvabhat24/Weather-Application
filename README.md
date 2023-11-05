@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[weather-application-sooty.vercel.app](weather-application-sooty.vercel.app)
+[weather-application-sooty.vercel.app](https://weather-application-sooty.vercel.app/)
 
   
   
