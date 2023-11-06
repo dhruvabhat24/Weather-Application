@@ -14,12 +14,12 @@
   /* Colors */
 
   --primary: #b5a1e5;
-  --on-primary: #100e17;
-  --background: #131214;
-  --on-background: #eae6f2;
+  --on-primary: rgb(58, 150, 99);
+  --background: #4b2275;
+  --on-background: rgb(58, 154, 114);
   --surface: #1d1c1f;
-  --on-surface: #dddae5;
-  --on-surface-variant: #7b7980;
+  --on-surface: rgb(201, 201, 34);
+  --on-surface-variant: #46bc28;
   --on-surface-variant-2: #b9b6bf;
   --outline: #3e3d40;
   --bg-aqi-1: #89e589;
